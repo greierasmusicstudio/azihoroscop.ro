@@ -15,7 +15,7 @@ else:
     print("❌ EROARE: Nu am gasit cheia API! Robotul nu poate functiona.")
     exit()
 
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 ZODII = [
     "berbec", "taur", "gemini", "rac", "leu", "fecioara", 
