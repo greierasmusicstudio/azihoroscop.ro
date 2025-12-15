@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscop Pești Azi | Analiză Completă</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style> .card-content { transition: opacity 0.4s ease; } </style>
+</head>
+<body>
+
+    <canvas id="star-canvas"></canvas>
+
+    <div class="container">
+        
+        <header style="padding: 1.5rem 0;">
+            <a href="../index.html" style="text-decoration:none;">
+                <h1 class="logo" style="font-size: 1.5rem;">← AZI HOROSCOP</h1>
+            </a>
+        </header>
+
+        <main>
+            <div class="detail-header">
+                <div class="icon" style="font-size: 5rem; margin-bottom:0; text-shadow:0 0 30px rgba(157, 78, 221, 0.5)">♓</div>
+                <h2>PEȘTI</h2>
+                <p class="subtitle" id="date-display">Se conectează la astre...</p>
+            </div>
+
+            <div class="dashboard-grid">
+                
+                <div class="card-big">
+                    <h3 class="card-title">✨ Energia Zilei</h3>
+                    <p class="card-content" id="txt-general">Se încarcă previziunile...</p>
+                </div>
+
+                <div class="card-big half">
+                    <h3 class="card-title">❤️ Dragoste & Relații</h3>
+                    <p class="card-content" id="txt-love">Se încarcă...</p>
+                </div>
+
+                <div class="card-big half">
+                    <h3 class="card-title">💰 Bani & Carieră</h3>
+                    <p class="card-content" id="txt-money">Se încarcă...</p>
+                </div>
+
+                <div class="card-big third stat-box">
+                    <span class="stat-label">Număr Norocos</span>
+                    <span class="stat-value" id="val-number">-</span>
+                </div>
+
+                <div class="card-big third stat-box">
+                    <span class="stat-label">Culoarea Zilei</span>
+                    <span class="stat-value" id="val-color">-</span>
+                </div>
+
+                <div class="card-big third stat-box">
+                    <span class="stat-label">Stare de Spirit</span>
+                    <span class="stat-value" id="val-mood">-</span>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <a href="#" class="zodiac-card" style="display:inline-block; padding: 1rem 3rem; background: var(--secondary-purple); color: white;">
+                    Compatibilitate în Dragoste (PDF) 🔒
+                </a>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 AziHoroscop.ro</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // Initializam pagina pentru cheia 'berbec' din JSON
+        loadZodiacData('pesti');
+    </script>
+</body>
+</html>
